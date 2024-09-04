@@ -33,3 +33,11 @@ Route::any("/id/{id}",function(string $id){
 Route::any("/about/me/{id}",function(string $id){
     return "user no ".$id;
 });
+
+
+Route::get("/user/{name?}",function(?string $name=null){
+     return $name;
+});
+Route::get("/userId/{myname?}",function(?string $myname="greggs"){
+    return $myname;
+});
