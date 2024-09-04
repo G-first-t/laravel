@@ -6,6 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Rout::get('/about',function(){
+Route::get('/about',function(){
     return "hello world am new to coding";
 });
