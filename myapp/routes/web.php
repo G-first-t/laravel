@@ -17,3 +17,8 @@ Route::match(["get","post"],"/sum",function(){
      $sum=$variable_1+$variable_2;
      return $sum;
 });
+
+Route::any("/any",function(){
+    $my_name="gregory Kimbira";
+     return var_dump($my_name);
+});
