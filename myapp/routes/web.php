@@ -25,3 +25,11 @@ Route::any("/any",function(){
 
 
 Route::redirect("/home","/");
+
+Route::any("/id/{id}",function(string $id){
+    return "user".$id;
+});
+
+Route::any("/about/me/{id}",function(string $id){
+    return "user no ".$id;
+});
