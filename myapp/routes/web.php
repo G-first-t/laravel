@@ -22,3 +22,6 @@ Route::any("/any",function(){
     $my_name="gregory Kimbira";
      return var_dump($my_name);
 });
+
+
+Route::redirect("/home","/");
